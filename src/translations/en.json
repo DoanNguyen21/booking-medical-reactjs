@@ -1,4 +1,18 @@
 {
+    "home-header": {
+        "all": "All",
+        "athome": "At home",
+        "atinstitute": "At institute",
+        "livestrong": "Live strong",
+        "findadoctor": "Find a doctor",
+        "appointmentschedule": "Schedule",
+        "support": "Support"
+
+
+
+        
+    },
+
     "common": {
         "add": "Add",
         "edit": "Edit",

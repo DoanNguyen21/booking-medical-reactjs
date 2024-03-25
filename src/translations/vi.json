@@ -1,4 +1,15 @@
 {
+    "home-header": {
+        "all": "Tất cả",
+        "athome": "Tại nhà",
+        "atinstitute": "Tại viện",
+        "livestrong": "Sống khỏe",
+        "findadoctor": "Tìm bác sĩ",
+        "appointmentschedule": "Lịch hẹn",
+        "support": "Hỗ trợ"
+
+    },
+   
     "common": {
         "add": "Thêm",
         "edit": "Sửa",

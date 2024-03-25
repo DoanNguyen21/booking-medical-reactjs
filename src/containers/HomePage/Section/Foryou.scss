@@ -1,0 +1,45 @@
+.foryou-main {
+  .foryou-content {
+    padding: 20px 0;
+
+    .foryou-text {
+      margin-bottom: 32px;
+      span {
+        font-family: Montserrat, sans-serif !important;
+        font-size: 24px;
+        font-weight: 600 !important;
+      }
+    }
+    .foryou-item {
+      padding: 20px 0;
+      .item-content {
+        display: flex;
+
+        .item {
+          display: flex;
+          width: 300px;
+          height: 284px;
+          margin: 4px 20px;
+          text-align: center;
+          justify-content: center;
+          .item-img {
+            width: 218px;
+            img {
+              width: 218px;
+              height: 218px;
+              border-radius: 50%;
+            }
+          }
+          .foryou-span {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 22px;
+            margin-bottom: 4px;
+            color: rgb(17, 49, 53);
+          }
+        }
+      }
+    }
+  }
+}
