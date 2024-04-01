@@ -18,93 +18,95 @@ class HomeHeader extends Component {
     return (
       <React.Fragment>
         <div className="home-header-container">
-          <div className="home-header-content container ">
-            <div className="left-content ">
-              <i className="fas fa-bars"></i>
-              <div className="header-logo"></div>
-            </div>
-            <div className="center-content">
-              <div className="child-content">
-                <div>
-                  <a href="#">
+          <div className="container">
+            <div className="home-header-content  ">
+              <div className="left-content ">
+                <i className="fas fa-bars"></i>
+                <div className="header-logo"></div>
+              </div>
+              <div className="center-content">
+                <div className="child-content">
+                  <div>
+                    <a href="#">
+                      <span>
+                        {" "}
+                        <FormattedMessage id="home-header.all" />
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="child-content">
+                  <div>
+                    <a href="#">
+                      <span>
+                        {" "}
+                        <FormattedMessage id="home-header.athome" />
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="child-content">
+                  <div>
+                    <a href="#">
+                      <span>
+                        <FormattedMessage id="home-header.atinstitute" />
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="child-content">
+                  <div>
+                    <a href="#">
+                      <span>
+                        <FormattedMessage id="home-header.livestrong" />
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="input-search">
+                  <a href="#" className="button-search">
+                    <i className="fas fa-search"></i>
                     <span>
-                      {" "}
-                      <FormattedMessage id="home-header.all" />
+                      <FormattedMessage id="home-header.findadoctor" />
                     </span>
                   </a>
                 </div>
               </div>
-              <div className="child-content">
-                <div>
-                  <a href="#">
-                    <span>
-                      {" "}
-                      <FormattedMessage id="home-header.athome" />
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div className="child-content">
-                <div>
-                  <a href="#">
-                    <span>
-                      <FormattedMessage id="home-header.atinstitute" />
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div className="child-content">
-                <div>
-                  <a href="#">
-                    <span>
-                      <FormattedMessage id="home-header.livestrong" />
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div className="input-search">
-                <a href="#" className="button-search">
-                  <i className="fas fa-search"></i>
+              <div className="right-content">
+                <div className="appoinment">
+                  <i className="far fa-clock"></i>
                   <span>
-                    <FormattedMessage id="home-header.findadoctor" />
+                    <FormattedMessage id="home-header.appointmentschedule" />
                   </span>
-                </a>
-              </div>
-            </div>
-            <div className="right-content">
-              <div className="appoinment">
-                <i className="far fa-clock"></i>
-                <span>
-                  <FormattedMessage id="home-header.appointmentschedule" />
-                </span>
-              </div>
-              <div className="support">
-                <i className="far fa-question-circle"></i>
-                <span>
-                  <FormattedMessage id="home-header.support" />
-                </span>
-              </div>
-              <div
-                className={
-                  language === LANGUAGES.VI
-                    ? "language-vi active"
-                    : "language-vi"
-                }
-              >
-                <span onClick={() => this.changeLanguage(LANGUAGES.VI)}>
-                  VN
-                </span>
-              </div>
-              <div
-                className={
-                  language === LANGUAGES.EN
-                    ? "language-en active"
-                    : "language-en"
-                }
-              >
-                <span onClick={() => this.changeLanguage(LANGUAGES.EN)}>
-                  EN
-                </span>
+                </div>
+                <div className="support">
+                  <i className="far fa-question-circle"></i>
+                  <span>
+                    <FormattedMessage id="home-header.support" />
+                  </span>
+                </div>
+                <div
+                  className={
+                    language === LANGUAGES.VI
+                      ? "language-vi active"
+                      : "language-vi"
+                  }
+                >
+                  <span onClick={() => this.changeLanguage(LANGUAGES.VI)}>
+                    VN
+                  </span>
+                </div>
+                <div
+                  className={
+                    language === LANGUAGES.EN
+                      ? "language-en active"
+                      : "language-en"
+                  }
+                >
+                  <span onClick={() => this.changeLanguage(LANGUAGES.EN)}>
+                    EN
+                  </span>
+                </div>
               </div>
             </div>
           </div>

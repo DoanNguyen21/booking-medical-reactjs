@@ -1,0 +1,194 @@
+.slick-prev {
+    box-shadow      : rgb(201, 236, 240) 2px 2px 5px;
+    border-radius   : 8px;
+    border-width    : 1px !important;
+    border-color    : rgb(181, 231, 237);
+    left            : -15px !important;
+    z-index         : 1000;
+    height          : 40px !important;
+    width           : 40px !important;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background-color: rgb(255, 255, 255) !important;
+
+    &::before {
+        content: none !important;
+    }
+}
+
+.slick-next {
+    box-shadow      : rgb(201, 236, 240) 2px 2px 5px;
+    border-radius   : 8px;
+    border-width    : 1px;
+    border-color    : rgb(181, 231, 237);
+    right           : 5px !important;
+    height          : 40px !important;
+    width           : 40px !important;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    background-color: rgb(255, 255, 255) !important;
+
+    &::before {
+        content: none !important;
+    }
+}
+
+.section-share {
+    &.section-outstanding-doctor {
+        background: url("../../assets//background/background-doctor.png");
+    }
+
+    &.section-about {
+        // background: url("../../assets//background/background-doctor.png");
+
+        .section-about-header {
+            text-align : center;
+            font-size  : 32px;
+            color      : #1A1A1A;
+            font-weight: 600;
+        }
+
+        .section-about-content {
+            margin-top: 35px;
+
+        }
+    }
+
+    .section-body {
+        .section-customize {
+            width           : 380px !important;
+            height          : 310px;
+            background-color: rgba(0, 0, 0, 0);
+            border          : 1px solid #c0c0c0;
+            border-radius   : 8px;
+
+            &.section-outstanding-doctor {
+                border: none !important;
+            }
+
+            .a-customize {
+                display        : grid;
+                justify-items  : center;
+                list-style     : none !important;
+                text-decoration: none !important;
+
+                .outer-bg .section-outstanding-doctor {
+                    width        : 218px;
+                    height       : 218px;
+                    border-radius: 50%;
+                }
+
+                &.section-healthfacility {
+                    width : 380px;
+                    height: 310px;
+                }
+
+                .span-customize {
+                    width          : 330px;
+                    height         : 60px;
+                    font-weight    : 600;
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+
+                    &.section-outstanding-doctor {
+                        display   : block;
+                        text-align: center;
+
+                        .span-specialty-outstanding-doctor {
+                            color      : #626262;
+                            font-size  : 16px;
+                            font-weight: 400;
+                        }
+
+
+                    }
+
+                    .section-span-footer {
+                        padding-top: 25px;
+                        margin     : 5px 0;
+                        color      : rgb(26, 26, 26);
+                        line-height: 32px;
+                        font-size  : 18px;
+
+                    }
+                }
+
+                .bg-image {
+                    height                : 216px;
+                    width                 : 330px;
+                    margin-top            : 15px;
+                    background-position   : center center;
+                    background-repeat     : no-repeat;
+                    // background-size    : cover !important;
+
+
+                    &.section-specialty {
+                        background-image: url("../../assets/specialty/co-xuong-khop.png");
+
+                    }
+
+                    &.section-healthfacility {
+                        height          : 157px;
+                        width           : 329px;
+                        background-image: url("../../assets/healthfacility/lo-go-viet-duc.jpg");
+
+
+                    }
+
+                    &.section-outstanding-doctor {
+                        background-image: url("../../assets/outstanding-doctor/gs-ha-van-quyet.jpg");
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-share {
+    padding-top   : 20px;
+    padding-bottom: 30px;
+
+    .section-container {
+        display       : flex;
+        flex-direction: column;
+        padding-top   : 20px;
+        padding-bottom: 30px;
+
+        .section-header {
+            height         : 60px;
+            margin-bottom  : 32px;
+            display        : flex;
+            justify-content: space-between;
+
+            .title-section {
+                font-family: Montserrat, sans-serif !important;
+                font-size  : 24px;
+                font-weight: 600 !important;
+            }
+
+            .btn-section {
+                width           : 124px;
+                height          : 52px;
+                color           : #34929e;
+                font            : 20px Montserrat, sans-serif !important;
+                font-weight     : 600 !important;
+                background-color: #daf3f6;
+                border          : none;
+                border-radius   : 15px;
+            }
+        }
+    }
+}
+
+.home-footer {
+    padding-top: 8px;
+    text-align : center;
+
+    a {
+        text-decoration: none;
+    }
+}
