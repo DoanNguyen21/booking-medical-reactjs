@@ -14,6 +14,7 @@ import Specialty from "./Section/Specialty";
 import OutStandingDoctor from "./Section/OutStandingDoctor";
 import About from "./Section/About";
 import HomeFooter from "./HomeFooter";
+import HandBook from "./Section/HandBook";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -75,6 +76,18 @@ class HomePage extends Component {
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
     };
+
+    let settings_Handbook = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToCroll: 1,
+
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+    };
+
     return (
       <div>
         <HomeHeader />
@@ -84,6 +97,7 @@ class HomePage extends Component {
         <Specialty settings={settings} />
         <HealthFacility settings={settings} />
         <OutStandingDoctor settings={settings_Doctor} />
+        <HandBook settings={settings_Handbook} />
         <About />
         <HomeFooter />
       </div>

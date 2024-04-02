@@ -68,6 +68,10 @@
                 border: none !important;
             }
 
+            &.section-handbook {
+                border: none !important;
+            }
+
             .a-customize {
                 display        : grid;
                 justify-items  : center;
@@ -83,6 +87,12 @@
                 &.section-healthfacility {
                     width : 380px;
                     height: 310px;
+                }
+
+                &.section-handbook {
+                    width    : 380px;
+                    // height: 310px;
+
                 }
 
                 .span-customize {
@@ -140,6 +150,13 @@
 
                     &.section-outstanding-doctor {
                         background-image: url("../../assets/outstanding-doctor/gs-ha-van-quyet.jpg");
+
+                    }
+
+                    &.section-handbook {
+                        height          : 157px;
+                        width           : 329px;
+                        background-image: url("../../assets/handbook/nho-rang-khon-tai-dong-nai.png");
 
                     }
                 }

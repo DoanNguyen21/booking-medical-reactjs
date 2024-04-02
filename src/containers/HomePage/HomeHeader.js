@@ -15,6 +15,7 @@ class HomeHeader extends Component {
   };
   render() {
     let language = this.props.language;
+
     return (
       <React.Fragment>
         <div className="home-header-container">
@@ -30,7 +31,7 @@ class HomeHeader extends Component {
                     <a href="#">
                       <span>
                         {" "}
-                        <FormattedMessage id="home-header.all" />
+                        <FormattedMessage id="homeheader.all" />
                       </span>
                     </a>
                   </div>
@@ -40,7 +41,7 @@ class HomeHeader extends Component {
                     <a href="#">
                       <span>
                         {" "}
-                        <FormattedMessage id="home-header.athome" />
+                        <FormattedMessage id="homeheader.athome" />
                       </span>
                     </a>
                   </div>
@@ -49,7 +50,7 @@ class HomeHeader extends Component {
                   <div>
                     <a href="#">
                       <span>
-                        <FormattedMessage id="home-header.atinstitute" />
+                        <FormattedMessage id="homeheader.atinstitute" />
                       </span>
                     </a>
                   </div>
@@ -58,7 +59,7 @@ class HomeHeader extends Component {
                   <div>
                     <a href="#">
                       <span>
-                        <FormattedMessage id="home-header.livestrong" />
+                        <FormattedMessage id="homeheader.livestrong" />
                       </span>
                     </a>
                   </div>
@@ -67,7 +68,7 @@ class HomeHeader extends Component {
                   <a href="#" className="button-search">
                     <i className="fas fa-search"></i>
                     <span>
-                      <FormattedMessage id="home-header.findadoctor" />
+                      <FormattedMessage id="homeheader.findadoctor" />
                     </span>
                   </a>
                 </div>
@@ -76,13 +77,13 @@ class HomeHeader extends Component {
                 <div className="appoinment">
                   <i className="far fa-clock"></i>
                   <span>
-                    <FormattedMessage id="home-header.appointmentschedule" />
+                    <FormattedMessage id="homeheader.appointmentschedule" />
                   </span>
                 </div>
                 <div className="support">
                   <i className="far fa-question-circle"></i>
                   <span>
-                    <FormattedMessage id="home-header.support" />
+                    <FormattedMessage id="homeheader.support" />
                   </span>
                 </div>
                 <div
