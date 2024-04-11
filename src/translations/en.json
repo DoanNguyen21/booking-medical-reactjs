@@ -42,5 +42,10 @@
         "image": "Avatar",
         "save": "Save user",
         "edit": "Edit user"
-    }
+    },
+    "home-page": {
+        "out-standing-doctor": "Outstanding doctor",
+        "more-infor": "More infor"
+       
+     }
 }

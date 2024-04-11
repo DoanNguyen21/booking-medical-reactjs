@@ -55,10 +55,13 @@ function SamplePrevArrow(props) {
 }
 
 class HomePage extends Component {
+  // handleAfterChange = (index, dontAnimate) => {
+  //   console.log("channel:", index);
+  // };
   render() {
     let settings = {
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 3,
       slidesToCroll: 1,
@@ -68,10 +71,11 @@ class HomePage extends Component {
     };
     let settings_Doctor = {
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 4,
       slidesToCroll: 1,
+      // slickGoTo: this.handleAfterChange,
 
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
@@ -79,7 +83,7 @@ class HomePage extends Component {
 
     let settings_Handbook = {
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 4,
       slidesToCroll: 1,

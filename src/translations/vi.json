@@ -40,6 +40,12 @@
         "image": "Ảnh đại diện",
         "save": "Lưu user",
         "edit": "Lưu thay đổi"
+    },
+
+    "home-page": {
+       "out-standing-doctor": "Bác sĩ nổi bật",
+       "more-infor": "Xem thêm"
+      
     }
 
 

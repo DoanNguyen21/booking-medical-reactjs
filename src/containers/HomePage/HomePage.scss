@@ -35,6 +35,10 @@
     }
 }
 
+.slick-disabled {
+    display: none !important;
+}
+
 .section-share {
     &.section-outstanding-doctor {
         background: url("../../assets//background/background-doctor.png");
@@ -66,6 +70,7 @@
 
             &.section-outstanding-doctor {
                 border: none !important;
+                height: 330px !important;
             }
 
             &.section-handbook {
@@ -77,6 +82,10 @@
                 justify-items  : center;
                 list-style     : none !important;
                 text-decoration: none !important;
+
+                &.section-outstanding-doctor {
+                    margin-right: 100px;
+                }
 
                 .outer-bg .section-outstanding-doctor {
                     width        : 218px;
@@ -103,36 +112,43 @@
                     align-items    : center;
                     justify-content: center;
 
+
+
                     &.section-outstanding-doctor {
                         display   : block;
                         text-align: center;
+                        width     : 240px !important;
+                        height    : 120px !important;
 
                         .span-specialty-outstanding-doctor {
                             color      : #626262;
                             font-size  : 16px;
                             font-weight: 400;
+
                         }
 
 
                     }
 
                     .section-span-footer {
-                        padding-top: 25px;
+                        // padding-top: 25px;
                         margin     : 5px 0;
                         color      : rgb(26, 26, 26);
                         line-height: 32px;
                         font-size  : 18px;
 
+
+
                     }
                 }
 
                 .bg-image {
-                    height                : 216px;
-                    width                 : 330px;
-                    margin-top            : 15px;
-                    background-position   : center center;
-                    background-repeat     : no-repeat;
-                    // background-size    : cover !important;
+                    height             : 216px;
+                    width              : 330px;
+                    margin-top         : 15px;
+                    background-position: center center;
+                    background-repeat  : no-repeat;
+                    background-size    : cover !important;
 
 
                     &.section-specialty {
