@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
+import { withRouter } from "react-router";
 
 import Slider from "react-slick";
 import * as actions from "../../../store/actions";
@@ -25,6 +26,12 @@ class OutStandingDoctor extends Component {
   componentDidMount() {
     this.props.loadTopDoctors();
   }
+
+  handleViewDetailDoctor = (doctor) => {
+    if (this.props.history) {
+      this.props.history.push(`/detail-doctor/${doctor.id}`);
+    }
+  };
 
   render() {
     let arrDoctors = this.state.arrDoctors;
@@ -60,29 +67,30 @@ class OutStandingDoctor extends Component {
                       <div
                         className="section-customize section-outstanding-doctor"
                         key={index}
+                        onClick={() => this.handleViewDetailDoctor(item)}
                       >
-                        <a
-                          href="#"
+                        {/* <a
+                          href={`users?id=${item.id}`}
                           className="a-customize section-outstanding-doctor"
-                        >
-                          <div className="outer-bg section-outstanding-doctor">
-                            <div
-                              className="bg-image section-outstanding-doctor"
-                              style={{
-                                backgroundImage: `url(${imageBase64})`,
-                              }}
-                            />
-                          </div>
+                        > */}
+                        <div className="outer-bg section-outstanding-doctor">
+                          <div
+                            className="bg-image section-outstanding-doctor"
+                            style={{
+                              backgroundImage: `url(${imageBase64})`,
+                            }}
+                          />
+                        </div>
 
-                          <div className="span-customize section-outstanding-doctor">
-                            <span className="section-span-footer ">
-                              {language === LANGUAGES.VI ? nameVi : nameEn}
-                            </span>
-                            <div className="span-specialty-outstanding-doctor">
-                              Cơ xương khớp
-                            </div>
+                        <div className="span-customize section-outstanding-doctor">
+                          <span className="section-span-footer ">
+                            {language === LANGUAGES.VI ? nameVi : nameEn}
+                          </span>
+                          <div className="span-specialty-outstanding-doctor">
+                            Cơ xương khớp
                           </div>
-                        </a>
+                        </div>
+                        {/* </a> */}
                       </div>
                     );
                   })}
@@ -109,4 +117,6 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor);
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor)
+);

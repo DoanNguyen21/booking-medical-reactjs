@@ -1,20 +1,23 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import "./HomeHeader.scss";
-import "./Section/Banner.scss";
-import "../../styles/styles.scss";
+import "./HomeHeaderPatient.scss";
 import { FormattedMessage } from "react-intl";
 import { LANGUAGES } from "../../utils";
+import { withRouter } from "react-router";
 
 import { changeLanguageApp } from "../../store/actions";
 
-class HomeHeader extends Component {
+class HomeHeaderPatient extends Component {
   changeLanguage = (language) => {
     this.props.changeLanguageAppRedux(language);
     // fire redux events : actions
   };
 
-  
+  returnToHome = () => {
+    if (this.props.history) {
+      this.props.history.push(`/home`);
+    }
+  };
   render() {
     let language = this.props.language;
 
@@ -22,60 +25,42 @@ class HomeHeader extends Component {
       <React.Fragment>
         <div className="home-header-container">
           <div className="container">
-            <div className="home-header-content  ">
+            <div className="home-header-content">
               <div className="left-content ">
                 <i className="fas fa-bars"></i>
                 <div
                   className="header-logo"
-                 
+                  onClick={() => this.returnToHome()}
                 ></div>
               </div>
               <div className="center-content">
-                <div className="child-content">
-                  <div>
-                    <a href="#">
-                      <span>
-                        {" "}
-                        <FormattedMessage id="homeheader.all" />
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div className="child-content">
-                  <div>
-                    <a href="#">
-                      <span>
-                        {" "}
-                        <FormattedMessage id="homeheader.athome" />
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div className="child-content">
-                  <div>
-                    <a href="#">
-                      <span>
-                        <FormattedMessage id="homeheader.atinstitute" />
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div className="child-content">
-                  <div>
-                    <a href="#">
-                      <span>
-                        <FormattedMessage id="homeheader.livestrong" />
-                      </span>
-                    </a>
-                  </div>
-                </div>
-                <div className="input-search">
-                  <a href="#" className="button-search">
-                    <i className="fas fa-search"></i>
-                    <span>
-                      <FormattedMessage id="homeheader.findadoctor" />
+                <div className="layout-content">
+                  <div className="child-content">
+                    <span className="title-first">Chuyên khoa</span>
+
+                    <span className="title-second">
+                      Tìm bác sĩ theo chuyên khoa
                     </span>
-                  </a>
+                  </div>
+                  <div className="child-content">
+                    <span className="title-first">Cơ sở y tế</span>
+
+                    <span className="title-second">
+                      Chọn bệnh viện phòng khám
+                    </span>
+                  </div>
+                  <div className="child-content">
+                    <span className="title-first">Bác sĩ</span>
+
+                    <span className="title-second">Chọn bác sĩ giỏi</span>
+                  </div>
+                  <div className="child-content">
+                    <span className="title-first">Gói khám</span>
+
+                    <span className="title-second">
+                      Khám sức khỏe tổng quát
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="right-content">
@@ -135,4 +120,6 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader);
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(HomeHeaderPatient)
+);

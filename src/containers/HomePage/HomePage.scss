@@ -67,6 +67,14 @@
             background-color: rgba(0, 0, 0, 0);
             border          : 1px solid #c0c0c0;
             border-radius   : 8px;
+            cursor          : pointer;
+
+            &.section-healthfacility {
+                display        : grid !important;
+                justify-items  : center;
+                list-style     : none !important;
+                text-decoration: none !important;
+            }
 
             &.section-outstanding-doctor {
                 border: none !important;
@@ -77,110 +85,110 @@
                 border: none !important;
             }
 
-            .a-customize {
-                display        : grid;
-                justify-items  : center;
-                list-style     : none !important;
-                text-decoration: none !important;
+            // .a-customize {
+            //     display        : grid;
+            //     justify-items  : center;
+            //     list-style     : none !important;
+            //     text-decoration: none !important;
+
+            //     &.section-outstanding-doctor {
+            //         margin-right: 100px;
+            //     }
+
+            .outer-bg .section-outstanding-doctor {
+                width        : 218px;
+                height       : 218px;
+                border-radius: 50%;
+            }
+
+            &.section-healthfacility {
+                width : 380px;
+                height: 310px;
+            }
+
+            &.section-handbook {
+                width    : 380px;
+                // height: 310px;
+
+            }
+
+            .span-customize {
+                width          : 330px;
+                height         : 60px;
+                font-weight    : 600;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+
+
 
                 &.section-outstanding-doctor {
-                    margin-right: 100px;
+                    display   : block;
+                    text-align: center;
+                    width     : 240px !important;
+                    height    : 120px !important;
+
+                    .span-specialty-outstanding-doctor {
+                        color      : #626262;
+                        font-size  : 16px;
+                        font-weight: 400;
+
+                    }
+
+
                 }
 
-                .outer-bg .section-outstanding-doctor {
-                    width        : 218px;
-                    height       : 218px;
-                    border-radius: 50%;
+                .section-span-footer {
+                    // padding-top: 25px;
+                    margin     : 5px 0;
+                    color      : rgb(26, 26, 26);
+                    line-height: 32px;
+                    font-size  : 18px;
+
+
+
+                }
+            }
+
+            .bg-image {
+                height             : 216px;
+                width              : 330px;
+                margin-top         : 15px;
+                background-position: center center;
+                background-repeat  : no-repeat;
+                background-size    : cover !important;
+
+
+                &.section-specialty {
+                    background-image: url("../../assets/specialty/co-xuong-khop.png");
+
                 }
 
                 &.section-healthfacility {
-                    width : 380px;
-                    height: 310px;
+                    height          : 157px;
+                    width           : 329px;
+                    background-image: url("../../assets/healthfacility/lo-go-viet-duc.jpg");
+
+
+                }
+
+                &.section-outstanding-doctor {
+                    // background-image: url("../../assets/outstanding-doctor/gs-ha-van-quyet.jpg");
+
                 }
 
                 &.section-handbook {
-                    width    : 380px;
-                    // height: 310px;
+                    height          : 157px;
+                    width           : 329px;
+                    background-image: url("../../assets/handbook/nho-rang-khon-tai-dong-nai.png");
 
-                }
-
-                .span-customize {
-                    width          : 330px;
-                    height         : 60px;
-                    font-weight    : 600;
-                    display        : flex;
-                    align-items    : center;
-                    justify-content: center;
-
-
-
-                    &.section-outstanding-doctor {
-                        display   : block;
-                        text-align: center;
-                        width     : 240px !important;
-                        height    : 120px !important;
-
-                        .span-specialty-outstanding-doctor {
-                            color      : #626262;
-                            font-size  : 16px;
-                            font-weight: 400;
-
-                        }
-
-
-                    }
-
-                    .section-span-footer {
-                        // padding-top: 25px;
-                        margin     : 5px 0;
-                        color      : rgb(26, 26, 26);
-                        line-height: 32px;
-                        font-size  : 18px;
-
-
-
-                    }
-                }
-
-                .bg-image {
-                    height             : 216px;
-                    width              : 330px;
-                    margin-top         : 15px;
-                    background-position: center center;
-                    background-repeat  : no-repeat;
-                    background-size    : cover !important;
-
-
-                    &.section-specialty {
-                        background-image: url("../../assets/specialty/co-xuong-khop.png");
-
-                    }
-
-                    &.section-healthfacility {
-                        height          : 157px;
-                        width           : 329px;
-                        background-image: url("../../assets/healthfacility/lo-go-viet-duc.jpg");
-
-
-                    }
-
-                    &.section-outstanding-doctor {
-                        // background-image: url("../../assets/outstanding-doctor/gs-ha-van-quyet.jpg");
-
-                    }
-
-                    &.section-handbook {
-                        height          : 157px;
-                        width           : 329px;
-                        background-image: url("../../assets/handbook/nho-rang-khon-tai-dong-nai.png");
-
-                    }
                 }
             }
         }
     }
 }
 
+// }
 .section-share {
     padding-top   : 20px;
     padding-bottom: 30px;
