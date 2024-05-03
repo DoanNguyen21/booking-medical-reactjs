@@ -100,7 +100,6 @@ class ManageDoctor extends Component {
         hasOldData: false,
       });
     }
-    console.log("option selected", res);
   };
 
   handleOnChangeDesc = (event) => {

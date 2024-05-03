@@ -48,7 +48,9 @@
     "home-page": {
        "out-standing-doctor": "Bác sĩ nổi bật",
        "more-infor": "Xem thêm"
-      
+    },
+    "manage-schedule": {
+        "title": "Quản lý kế hoạch khám bệnh của bác sĩ"
     }
 
 
